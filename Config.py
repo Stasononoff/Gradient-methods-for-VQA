@@ -12,8 +12,8 @@ config = {
     'circ': circuit_full_a,
     'dev': qml.device("cirq.mixedsimulator", wires=2),
 
-    # 'nl_array' : np.linspace(0,1, num = 20), 
-    # 'ly_array' : np.linspace(0,3, num = 20),
+    'nl_array' : np.linspace(0,3, num = 70), 
+    'ly_array' : np.linspace(0,8, num = 70),
 
     # 'nl_array' : [0.0000001, 0.000001, 0.00001, 0.0001, 0.001, 0.01, 0.1, 0.2, 0.5], 
     # 'ly_array' : [0.0000001, 0.000001, 0.00001, 0.0001, 0.001, 0.01, 0.1, 0.2, 0.5],

@@ -72,7 +72,7 @@ class scedule_program():
     param_list = unique_comb(self.ly_array[0], self.nl_array[0])  
     
 	
-    result = Parallel(n_jobs=2, verbose=10)(delayed(param_set_optim)(param_set, self.dims[0], self.random_seed[0],
+    result = Parallel(n_jobs=42, verbose=10)(delayed(param_set_optim)(param_set, self.dims[0], self.random_seed[0],
     self.eigenval[0], self.circ[0], self.dev, self.opt_params[0], self.adam[0], self.Stoh[0],
     self.QNG[0], self.init_params[0], self.steps[0], start_time) for param_set in param_list)
 
