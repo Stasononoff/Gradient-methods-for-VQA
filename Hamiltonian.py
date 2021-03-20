@@ -14,7 +14,9 @@ def build_Hamiltonian(dims = 4, random_seed = 42, eigenval = 0, noise_level = 0,
 
   Bell_vec = np.array([1,0,0,1])/np.sqrt(2)
 
-  Noise = (np.random.rand(4) - 0.5)*noise_level
+ # Noise = (np.random.rand(4) - 0.5)*noise_level
+  
+  Noise = (np.random.normal(size=4) - 0.5)*noise_level
 
   Bell_vec += Noise
   Bell_vec = Bell_vec/np.sqrt((Bell_vec**2).sum())
